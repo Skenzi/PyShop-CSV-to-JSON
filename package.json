@@ -1,0 +1,22 @@
+{
+  "name": "pyshop-csv-to-json",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Skenzi/PyShop-CSV-to-JSON.git"
+  },
+  "author": "Dmitri Klimenko",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Skenzi/PyShop-CSV-to-JSON/issues"
+  },
+  "homepage": "https://github.com/Skenzi/PyShop-CSV-to-JSON#readme",
+  "devDependencies": {
+    "typescript": "^4.5.4"
+  }
+}
