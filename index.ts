@@ -1,13 +1,7 @@
 const path = require("path");
 const fs = require("fs");
-const { parserCsv } = require("./src/parserCsv");
-const genTree = require("./src/genTree");
+const { csvToJson } = require("./src/csvToJson");
 
-const CsvToJson = (pathToCsv) => {
-    const fullPath = path.resolve(process.cwd(), pathToCsv);
-    const ext = path.extname(fullPath).slice(1);
-    const dateFromCsv = parserCsv(fs.readFileSync(fullPath, "utf-8"), ext);
-    return dateFromCsv;
+export const writeJson = (pathToCsv, pathToJson) => {
+    fs.writeFileSync(pathToJson, csvToJson(pathToCsv));
 };
-
-console.log(CsvToJson("./__fixtures__/books.csv"));

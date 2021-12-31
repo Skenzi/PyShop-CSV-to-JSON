@@ -1,0 +1,1 @@
+export const genJson = (tree) => JSON.stringify(tree, null, 2);

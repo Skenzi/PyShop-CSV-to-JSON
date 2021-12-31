@@ -4,7 +4,7 @@ export const parserCsv = (dateCsv: string, extname: string) => {
     };
     const items = dateCsv.split('\n');
     return items.map((item) => {
-        const [title, author, description] = item.split(';');
+        const [title, author, description] = item.split('; ');
         return {title, author, description};
     });
 }
