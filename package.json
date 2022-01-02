@@ -10,7 +10,7 @@
     "test": "jest",
     "build": "npx tsc",
     "convert": "node bin/csvtojson.js",
-    "lint": "npx eslint ."
+    "lint": "npx eslint ./src/*"
   },
   "repository": {
     "type": "git",

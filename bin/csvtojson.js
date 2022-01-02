@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 const program = require('commander');
-const { writeJson } = require('../built/index.js');
+const { writeJson } = require('../built/index');
 
 program
   .arguments('<filepathCsv> <filepathResult>')
