@@ -1,4 +1,4 @@
-export const genTree = (dataCsv) => {
+export const genTree = (dataCsv: Array<any>) : object => {
     return {
         authors: dataCsv.reduce((acc, item) => {
             const node = acc.find(({ author }) => author === item.author);

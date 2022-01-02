@@ -1,1 +1,1 @@
-export const genJson = (tree) => JSON.stringify(tree, null, 2);
+export const genJson = (tree: object) : string => JSON.stringify(tree, null, 2);

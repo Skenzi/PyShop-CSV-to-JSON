@@ -1,4 +1,4 @@
-export const parserCsv = (dateCsv: string, extname: string) => {
+export const parserCsv = (dateCsv: string, extname: string): Array<object> => {
     if (extname !== 'csv') {
         throw new Error('Unexpected file');
     };

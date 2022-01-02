@@ -4,7 +4,7 @@ const { parserCsv } = require("./parserCsv");
 const { genTree } = require("./genTree");
 const { genJson } = require("./genJson");
 
-export const csvToJson = (pathToCsv) => {
+export const csvToJson = (pathToCsv: string) : object => {
     const ext = path.extname(pathToCsv).slice(1);
     const dataFromCsv = parserCsv(fs.readFileSync(pathToCsv, "utf-8"), ext);
     const tree = genTree(dataFromCsv);
