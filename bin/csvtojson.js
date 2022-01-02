@@ -1,13 +1,13 @@
 #!/usr/bin/env node
 
-const program = require("commander");
-const {writeJson} = require("../built/index");
+const program = require('commander');
+const { writeJson } = require('../built/index');
 
 program
-.arguments('<filepathCsv> <filepathResult>')
-.action((filepathCsv, filepathResult) => {
-    writeJson(filepathCsv, filepathResult)
+  .arguments('<filepathCsv> <filepathResult>')
+  .action((filepathCsv, filepathResult) => {
+    writeJson(filepathCsv, filepathResult);
     console.log('file created');
-});
+  });
 
 program.parse(process.argv);

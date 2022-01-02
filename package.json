@@ -9,7 +9,8 @@
   "scripts": {
     "test": "jest",
     "build": "npx tsc",
-    "convert": "node bin/csvtojson.js"
+    "convert": "node bin/csvtojson.js",
+    "lint": "npx eslint ."
   },
   "repository": {
     "type": "git",
@@ -26,10 +27,17 @@
     "@babel/core": "^7.16.5",
     "@babel/preset-env": "^7.16.5",
     "@babel/preset-typescript": "^7.16.5",
+    "@jest/globals": "^27.4.4",
     "@types/commander": "^2.12.2",
     "@types/node": "^17.0.5",
+    "@typescript-eslint/eslint-plugin": "^5.8.1",
+    "@typescript-eslint/parser": "^5.8.1",
     "babel-jest": "^27.4.5",
     "commander-ts": "^0.2.0",
+    "eslint": "^8.6.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.25.3",
+    "eslint-plugin-jest": "^25.3.4",
     "jest": "^27.4.5",
     "ts-node": "^10.4.0",
     "typescript": "^4.5.4"
